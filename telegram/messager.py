@@ -23,7 +23,7 @@ class BotClient:
     def __init__(self):
         self.api_id = 941748
         self.api_hash = '03398ae66b58de459de3ed8a67adea40'
-        self.phone = '+13126004866'
+        self.phone = '+8613371603724'
         self.client = TelegramClient(self.phone, self.api_id, self.api_hash)
         self.available_groups = {}
         self.available_entities = {
@@ -31,7 +31,7 @@ class BotClient:
             "Micah Liu":148025347,
             "Jie Liu":282608054,
             "Zhi Fu": 171189988,
-            "Quanquan Xu": 821608836,
+            "Quanquan Xu": 460150389,
             "Kyoungsik Mun":530989334
         }
     async def connect(self):

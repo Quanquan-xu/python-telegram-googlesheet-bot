@@ -1,0 +1,4 @@
+.DS_Store
+*.session
+*.csv
+!telegram/messager.py
