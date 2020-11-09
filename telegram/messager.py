@@ -177,3 +177,11 @@ class BotClient:
                 message = person + "\n\n" + introduction_info + punishment_info + requsted_info + "\n" + deal_link_info + "\n\n" + end_info
                 #print(message)
                 await self.client.send_message(entity, message, parse_mode='html')
+
+    async def send_buy_snack_remind_message(self, group_id=325983737):
+        group = await self.client.get_input_entity(group_id)
+        date_str = datetime.datetime.now().strftime("%Y-%m-%d")
+        content = "<i>Today is</i> <b>{}</b>, <i>which means we need to buy snacks for our team members. </i>\n\n <i>Here are some links:</i> \n\nhttps://www.walmart.com/\n\n\nhttps://www.costco.com/\n\n\nhttps://www.yamibuy.com/\n\n <b>We can choose one online website store to buy what we want to eat! Thanks!!!</b>".format(date_str)
+        #await self.client.send_message('me', content, parse_mode='html')
+        await self.client.send_message(group, content, parse_mode='html')
+
