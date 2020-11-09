@@ -169,7 +169,7 @@ class BotClient:
                 entity = await self.client.get_input_entity(entity_id)
                 person = '<b>Dear {} :</b>'.format(entity_name)
                 introduction_info = "<b>Today you are late.</b> <i>Here is the be-late recording info: " + '<b> {} </b>. '.format(late_info)
-                punishment_info = 'In principle, you need to compensate for <b>{}</b> after 6:00pm today</i>. '.format(late_compensate_table.get(late_info))
+                punishment_info = 'In principle, you need to compensate for <b>{}</b> after 6:30pm today</i>. '.format(late_compensate_table.get(late_info))
                 if requsted_info:
                     requsted_info = "But the supervisor hope that you can start to work from {} to compensate for it !".format(requsted_info)
                 deal_link_info = "\n<i>After you complete your be-late deal, please don't forget submit your deal info. Your deal code is <b>{}</b>, and here is Attendance Deal Record Form link </i>: \n{}".format(deal_code,deal_link)
